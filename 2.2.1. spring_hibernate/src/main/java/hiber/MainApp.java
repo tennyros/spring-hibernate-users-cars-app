@@ -6,7 +6,6 @@ import hiber.model.User;
 import hiber.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class MainApp {
@@ -35,7 +34,7 @@ public class MainApp {
          System.out.println();
       }
 
-      User userToFind = userService.getUserCarModelAndSeries("Fourth", 1);
+      User userToFind = userService.getUserCarByModelAndSeries("Fourth", 1);
       System.out.println(userToFind);
 
       context.close();
